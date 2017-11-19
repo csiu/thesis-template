@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=1.25in, left=1.25in]{geometry}
+\usepackage{datetime}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{nomencl}
+
+% Table:
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage[singlelinecheck=false]{caption}
+
+% Figures:
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Customizations
+% --------------
+\makeatletter
+% Quoting
+\newcommand{\quotes}[1]{``#1"}
+
+% Add dots to table of contents
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Remove self reference/title
+\let\@cftmaketoctitle\relax
+\let\@cftmakelottitle\relax
+\let\@cftmakeloftitle\relax
+\makeatother
+
+% position page number to bottom right
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\pagestyle{fancy}
+
+% Make List of Abbrev into section
+\renewcommand{\nomname}{List of Abbreviations}
+\patchcmd{\thenomenclature}{\section*}{\section}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title Page
+% ----------
+\makeatletter
+\newcommand{\thesistitle}{Characterization of the human thyroid epigenome}
+\newcommand{\studentname}{Celia Siu}
+\newcommand{\previousdegree}{B.Sc., The University of British Columbia, 2013}
+\newcommand{\degreename}{Master of Science}
+\newcommand{\program}{Bioinformatics}
+\newcommand{\campus}{Vancouver}
+\newcommand{\gradmonth}{\monthname}  % Prints current month
+\newcommand{\gradyear}{\the\year}    % Prints current year
+
+\renewcommand{\maketitle}{
+	\begin{titlepage}
+	\null\vfil\par
+	\begin{center}\setlength{\baselineskip}{20pt}
+		{\Large \textbf{\thesistitle}}\\[1em]
+
+		{\Large by}\\[1em]
+		{\Large \studentname}\\[1em]
+		{\Large \previousdegree}\\[1em]
+
+		{\Large \textsc{A thesis submitted in partial fulfillment of}}\\
+		{\Large \textsc{the requirements for the degree of}}\\[1em]
+
+		{\Large \textbf{\degreename}}\\[1em]
+		{\Large in}\\[1em]
+		{\Large \textsc{The Faculty of Graduate and Postdoctoral Studies}}\\[1em]
+		{\Large (\program)}\\[1em]
+
+		{\Large The University of British Columbia}\\
+		{\Large (\campus)}\\[1em]
+		{\Large \gradmonth\ \gradyear}\\[1em]
+		{\Large \textcopyright\ \studentname, \gradyear}
+	\end{center}
+	\vfill\null
+	\end{titlepage}
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Order of components
+% -------------------
+\begin{document}
+
+% 1. TITLE PAGE (required)
+\maketitle
+
+% % 2. ABSTRACT (required - max 350 words)
+% \pagenumbering{roman}
+% \setcounter{page}{2}
+% \include{abstract}
+%
+% % 3. PREFACE (required)
+% \include{preface}
+%
+% % 4. TABLE OF CONTENTS (required)
+% \pagebreak
+% \section{Table of Contents}
+% \tableofcontents
+%
+% % 5. LIST OF TABLES
+% \pagebreak
+% \section{List of Tables}
+% \listoftables
+%
+% % 6. LIST OF FIGURES
+% \pagebreak
+% \section{List of Figures}
+% \listoffigures
+%
+% % 7. LIST OF ILLUSTRATIONS
+%
+% % 8. LISTS OF SYMBOLS, ABBREVIATIONS OR OTHER (advisable)
+% \include{abbrev}
+%
+% % 9. GLOSSARY (optional)
+%
+% % 10. ACKNOWLEDGEMENTS (optional)
+% \include{acknowledgements}
+%
+% % 11. DEDICATION (optional)
+%
+% % 12. INTRODUCTION
+% % 13. RESEARCH CHAPTERS
+% % 14. CONCLUSION
+% \pagebreak
+% \pagenumbering{arabic}
+% \include{body}
+%
+% % 15. BIBLIOGRAPHY (required)
+% \pagebreak
+% \section{References}
+% \renewcommand{\section}[2]{}
+% \bibliographystyle{plain}
+% \bibliography{biblio}
+%
+% % 16. APPENDICES
+
+\end{document}
