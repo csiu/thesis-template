@@ -1,0 +1,13 @@
+% We use the "nomencl" package to create the list of abbreviations
+% The section header is already produced by this package,
+% so we do not declare it again
+
+\makenomenclature % to produce *.nlo file
+
+% You will need to add entries e.g.
+\nomenclature{UBC}{University of British Columbia}
+
+% and compile:
+%   makeindex $*.nlo -s nomencl.ist -o $*.nls
+
+\printnomenclature[1in]

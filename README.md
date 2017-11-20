@@ -5,3 +5,4 @@ LaTeX template for [UBC Thesis](https://www.grad.ubc.ca/current-students/dissert
 ## Components
 - `abstract.tex`
 - `preface.tex`
+- `abbrev.tex` - need to run `pdflatex main.tex` then compile it with `makeindex main.nlo -s nomencl.ist -o main.nls` and `pdflatex main.tex` again.
