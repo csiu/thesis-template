@@ -17,12 +17,12 @@ For references, we use `bibtex`. The indicated \*bib file contain examples of re
 
 # Usage
 ```
-# To generate
+# To generate 'main.pdf'
 make
 
 # To get rid of all generated files
 make clean
 ```
 
-# Acknowlegement
+# Acknowledgements
 Content taken from the [UBC: STRUCTURE OF THESES AND DISSERTATIONS](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/structure-theses-dissertations) page on November 19, 2017.
