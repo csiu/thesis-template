@@ -4,7 +4,7 @@ LaTeX template for [UBC Thesis](https://www.grad.ubc.ca/current-students/dissert
 - `body.tex` contains the intro, body, and conclusion contained in the `body/`  directory
 
 ## Components
-- `abstract.tex`
+- `abstract.tex` (also contains the lay summary)
 - `preface.tex`
 - `abbrev.tex` - need to run `pdflatex main.tex` then compile it with `makeindex main.nlo -s nomencl.ist -o main.nls` and `pdflatex main.tex` again.
 - `acknowledgements.tex` - optional

@@ -92,50 +92,51 @@
 \maketitle
 
 % 2. ABSTRACT (required - max 350 words)
+% 3. LAY SUMMARY (required - max 150 words)
 \pagenumbering{roman}
 \setcounter{page}{2}
 \include{abstract}
 
-% % 3. PREFACE (required)
+% 4. PREFACE (required)
 \include{preface}
 
-% 4. TABLE OF CONTENTS (required - will be generated for you)
+% 5. TABLE OF CONTENTS (required - will be generated for you)
 \pagebreak
 \section{Table of Contents}
 \tableofcontents
 
-% 5. LIST OF TABLES (required - will be generated for you)
+% 6. LIST OF TABLES (required - will be generated for you)
 \pagebreak
 \section{List of Tables}
 \listoftables
 
-% 6. LIST OF FIGURES (required - will be generated for you)
+% 7. LIST OF FIGURES (required - will be generated for you)
 \pagebreak
 \section{List of Figures}
 \listoffigures
 
-% 7. LIST OF ILLUSTRATIONS (required if document has illustrations)
+% 8. LIST OF ILLUSTRATIONS (required if document has illustrations)
 % As I did not have illustrations in my thesis,
 % you will need to set this up if you do.
 
-% 8. LISTS OF SYMBOLS, ABBREVIATIONS OR OTHER (advisable)
+% 9. LISTS OF SYMBOLS, ABBREVIATIONS OR OTHER (advisable)
 \include{abbrev}
 
-% 9. GLOSSARY (optional)
+% 10. GLOSSARY (optional)
 
-% 10. ACKNOWLEDGEMENTS (optional)
+% 11. ACKNOWLEDGEMENTS (optional)
 \include{acknowledgements}
 
-% 11. DEDICATION (optional)
+% 12. DEDICATION (optional)
 
-% 12. INTRODUCTION
-% 13. RESEARCH CHAPTERS
-% 14. CONCLUSION
+% 13-A. INTRODUCTION
+% 13-B. RESEARCH CHAPTERS
+% 13-C. CONCLUSION
 \pagebreak
 \pagenumbering{arabic}
 \include{body}
 
-% 15. BIBLIOGRAPHY (required)
+% 14. BIBLIOGRAPHY (required)
 % Note: you need to \cite{...} before this section gets generated
 % Examples are added in acknowledgements.tex
 \pagebreak
@@ -144,6 +145,6 @@
 \bibliographystyle{plain}
 \bibliography{references/biblio}
 
-% 16. APPENDICES
+% 15. APPENDICES
 
 \end{document}
