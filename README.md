@@ -1,16 +1,21 @@
-LaTeX template for [UBC Thesis](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/structure-theses-dissertations).
+A LaTeX template for writing a [UBC Thesis](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/structure-theses-dissertations).
 
-- `main.tex` dictates the order of the components and the format of the title page. The table of contents, list of tables, and list of figures are generated for you, but the list of illustrations is not (and you will need to set this up if you have illustrations in your thesis). The glossary and dedication was optional and thus was left out. The appendices was also left out.
-- `body.tex` contains the intro, body, and conclusion contained in the `body/`  directory
+# Files
+- [`main.tex`](main.tex) dictates the order of the components and the format of the title page. The table of contents, list of tables, and list of figures are generated for you, but the list of illustrations is not. The glossary, dedication, and appendices were optional and was also left out.
+- [`body.tex`](body.tex) contains the introduction, research chapters, and conclusion. To add content, look in the [`body/`](body/) directory.
 
 ## Components
-- `abstract.tex` (also contains the lay summary)
-- `preface.tex`
-- `abbrev.tex` - need to run `pdflatex main.tex` then compile it with `makeindex main.nlo -s nomencl.ist -o main.nls` and `pdflatex main.tex` again.
-- `acknowledgements.tex` - optional
-- `references/biblio.bib` - for references
+Other files include:
+- [`abstract.tex`](abstract.tex) (which also contains the lay summary)
+- [`preface.tex`](preface.tex)
+- [`abbrev.tex`](abbrev.tex) for the list of abbreviations
+- [`acknowledgements.tex`](acknowledgements.tex) (optional)
 
-## Usage
+For references, we use `bibtex`. The following file contain examples of references which can be called using `\cite{...}` (examples in `acknowledgements.tex`).
+
+- [`references/biblio.bib`](references/biblio.bib)
+
+# Usage
 ```
 # To generate
 make
@@ -18,3 +23,6 @@ make
 # To get rid of all generated files
 make clean
 ```
+
+# Acknowlegement
+Content taken from the [UBC: STRUCTURE OF THESES AND DISSERTATIONS](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/structure-theses-dissertations) page on November 19, 2017.
