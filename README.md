@@ -4,3 +4,4 @@ LaTeX template for [UBC Thesis](https://www.grad.ubc.ca/current-students/dissert
 
 ## Components
 - `abstract.tex`
+- `preface.tex`
