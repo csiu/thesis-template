@@ -11,7 +11,7 @@ Other files include:
 - [`abbrev.tex`](abbrev.tex) for the list of abbreviations
 - [`acknowledgements.tex`](acknowledgements.tex) (optional)
 
-For references, we use `bibtex`. The following file contain examples of references which can be called using `\cite{...}` (examples in `acknowledgements.tex`).
+For references, we use `bibtex`. The indicated \*bib file contain examples of references which can be called using `\cite{...}` (examples in `acknowledgements.tex`).
 
 - [`references/biblio.bib`](references/biblio.bib)
 
