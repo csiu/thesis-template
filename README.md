@@ -9,3 +9,12 @@ LaTeX template for [UBC Thesis](https://www.grad.ubc.ca/current-students/dissert
 - `abbrev.tex` - need to run `pdflatex main.tex` then compile it with `makeindex main.nlo -s nomencl.ist -o main.nls` and `pdflatex main.tex` again.
 - `acknowledgements.tex` - optional
 - `references/biblio.bib` - for references
+
+## Usage
+```
+# To generate
+make
+
+# To get rid of all generated files
+make clean
+```
